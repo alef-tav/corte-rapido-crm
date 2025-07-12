@@ -2,22 +2,19 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { DashboardHeader } from "@/components/DashboardHeader";
-import { StatsCards } from "@/components/StatsCards";
-import { ChartsSection } from "@/components/ChartsSection";
 
-const Index = () => {
+const Clientes = () => {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full bg-gray-50">
         <AppSidebar />
         <main className="flex-1 flex flex-col">
           <DashboardHeader />
-          <div className="flex-1 p-6 space-y-6">
-            <div className="mb-6">
-              <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <div className="flex-1 p-6">
+            <h1 className="text-2xl font-bold text-gray-900 mb-6">Clientes</h1>
+            <div className="bg-white rounded-lg p-6">
+              <p className="text-gray-600">Lista de clientes será implementada aqui.</p>
             </div>
-            <StatsCards />
-            <ChartsSection />
           </div>
         </main>
       </div>
@@ -25,4 +22,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Clientes;
